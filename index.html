@@ -23,7 +23,7 @@
         <nav class="navbar">
             <a href="#hero" class="nav-logo" aria-label="Fathahazz - kembali ke atas">
                 <span class="eye">
-                    <img src="/asset/eye.png" alt="" srcset="">
+                    <img src="asset/eye.png" alt="" srcset="">
                 </span>
                 <span class="serif-italic">Fathahazz<span class="dot serif">.</span></span>
             </a>
@@ -35,8 +35,7 @@
                 <li><a href="#kontak" data-section="kontak">Kontak</a></li>
             </ul>
 
-            <!-- nav-cta hanya tampil di desktop -->
-            <a href="#tentang" class="nav-cta nav-cta--desktop">
+            <a href="#tentang" class="nav-cta">
                 <span class="cta-text">Hai, Sapa aku</span> →
             </a>
 
@@ -110,10 +109,12 @@
                             fill="#E8492B" stroke="#1A1611" stroke-width="1.2" />
                     </svg>
                     <div class="photo-frame">
-                        <img src="/asset/hazz.jpeg" alt="Foto Fathahaz">
+                        <!-- GANTI src di bawah ini dengan foto profil kamu, mis: src="foto-saya.jpg" -->
+                        <img src="asset/hazz.jpeg" alt="Foto Fathahaz - ganti dengan foto kamu">
                     </div>
                     <div class="photo-badge serif-italic">Hai, Saya Hazz</div>
 
+                    <!-- sparkles yg ngikutin cursor -->
                     <svg class="sparkle-orbit" data-base-x="-55" data-base-y="180" data-amt="22" viewBox="0 0 40 40"
                         width="48" height="48" style="left:-55px; top:180px;">
                         <path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="currentColor" />
@@ -226,42 +227,56 @@
             </div>
 
             <div class="proyek-grid" id="proyekGrid">
+                <!-- 3 proyek pertama, selalu tampil -->
                 <div class="project-card reveal">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: Sistem Kasir Coffee Shop -->
+                    </div>
                     <h3>Kasir Kopi Senja</h3>
                     <span class="project-type">Web App</span>
                     <p class="desc">Sistem kasir & stok harian untuk coffee shop lokal, dipakai tim kasir tiap hari.</p>
                 </div>
                 <div class="project-card reveal">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: Ticketing Bus -->
+                    </div>
                     <h3>TiketBis Antarkota</h3>
                     <span class="project-type">Website</span>
                     <p class="desc">Platform pemesanan tiket bus antarkota lengkap dengan pilihan kursi dan riwayat
                         order.</p>
                 </div>
                 <div class="project-card reveal">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: Website Profil Klien -->
+                    </div>
                     <h3>Profil Studio Arka</h3>
                     <span class="project-type">Website</span>
                     <p class="desc">Landing page profesional untuk studio desain interior, fokus ke portfolio visual.
                     </p>
                 </div>
 
+                <!-- proyek tambahan, awalnya hidden -->
                 <div class="project-card reveal hidden-extra">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: App Inventaris Toko -->
+                    </div>
                     <h3>StokKu Inventaris</h3>
                     <span class="project-type">App</span>
                     <p class="desc">Aplikasi pencatatan stok barang untuk toko kelontong dengan notifikasi stok menipis.
                     </p>
                 </div>
                 <div class="project-card reveal hidden-extra">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: Dashboard Admin -->
+                    </div>
                     <h3>Dashboard Omah Laundry</h3>
                     <span class="project-type">Web App</span>
                     <p class="desc">Dashboard manajemen pesanan laundry, dari input order sampai laporan harian.</p>
                 </div>
                 <div class="project-card reveal hidden-extra">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <!-- ganti dengan <img src="..."> untuk foto proyek: UI Kit Mobile -->
+                    </div>
                     <h3>UI Kit Resep Dapur</h3>
                     <span class="project-type">UI/UX</span>
                     <p class="desc">Desain antarmuka aplikasi resep masakan rumahan, fokus pada navigasi yang mudah.</p>
@@ -289,6 +304,7 @@
             </div>
 
             <div class="kontak-panel reveal" id="kontakPanel">
+                <!-- sparkle ikut cursor -->
                 <svg class="kontak-sparkle" data-base-x="40" data-base-y="40" data-amt="20" viewBox="0 0 40 40"
                     width="40" height="40" style="left:40px; top:40px;">
                     <path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="currentColor" /></svg>
@@ -311,8 +327,8 @@
                                         stroke="#1A1611" stroke-width="1.8" stroke-linejoin="round" /></svg></div>
                             <div>
                                 <div class="info-label">Email</div>
-                                <div class="info-value"><a
-                                        href="mailto:fathahazz31@gmail.com">fathahazz31@gmail.com</a></div>
+                                <div class="info-value"><a href="mailto:fathahazz31@gmail.com">fathahazz31@gmail.com</a>
+                                </div>
                             </div>
                         </div>
                         <div class="info-item">
@@ -391,6 +407,21 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- placeholder kosong, tinggal copas card di atas untuk nambah testi -->
+                <!-- <div class="testi-card reveal">
+                    <div class="quote-mark">&ldquo;</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="msg">Hazz bikin website kafe kami jadi jauh lebih rapi dan mudah dipakai kasir baru
+                        sekalipun. Komunikasinya juga enak, selalu update progress.</p>
+                    <div class="testi-foot">
+                        <div class="testi-avatar"></div>
+                        <div>
+                            <div class="testi-name">Dewi Anggraini</div>
+                            <div class="testi-role">Owner, Kopi Senja | Mar 2026</div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -402,7 +433,7 @@
                 <div class="footer-col">
                     <div class="footer-logo">
                         <span class="eye">
-                            <img src="/asset/eye.png" alt=" " srcset="">
+                            <img src="asset/eye.png" alt=" " srcset="">
                         </span>
                         <span class="serif-italic">Fathahazz<span class="dot serif">.</span></span>
                     </div>
